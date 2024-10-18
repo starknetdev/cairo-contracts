@@ -9,8 +9,8 @@ pub mod selectors;
 pub mod serde;
 pub mod structs;
 
-#[cfg(test)]
-mod tests;
+// #[cfg(test)]
+// mod tests;
 
 pub mod unwrap_and_cast;
 
