@@ -31,7 +31,7 @@ pub trait IERC721<TState> {
 
 #[starknet::interface]
 pub trait IERC721Metadata<TState> {
-    fn name(self: @TState) -> ByteArray;
+    fn _name(self: @TState) -> ByteArray;
     fn symbol(self: @TState) -> ByteArray;
     fn token_uri(self: @TState, token_id: u256) -> ByteArray;
 }
