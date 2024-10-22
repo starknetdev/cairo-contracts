@@ -250,7 +250,7 @@ pub mod ERC721Component {
         +Drop<TContractState>
     > of interface::IERC721Metadata<ComponentState<TContractState>> {
         /// Returns the NFT name.
-        fn name(self: @ComponentState<TContractState>) -> ByteArray {
+        fn _name(self: @ComponentState<TContractState>) -> ByteArray {
             self.ERC721_name.read()
         }
 
@@ -405,7 +405,7 @@ pub mod ERC721Component {
 
         // IERC721Metadata
         fn _name(self: @ComponentState<TContractState>) -> ByteArray {
-            ERC721Metadata::name(self)
+            ERC721Metadata::_name(self)
         }
 
         fn symbol(self: @ComponentState<TContractState>) -> ByteArray {
